@@ -9,14 +9,14 @@ module.exports.config = {
 	cooldowns: 5,
 	envConfig: {
 		autoUnsend: true,
-		delayUnsend: 30
+		delayUnsend: 40
 	}
 };
 
 module.exports.languages = {
 	"vi": {
-		"moduleInfo": "「 %1 」\n%2\n\n❯ Cách sử dụng: %3\n❯ Thuộc nhóm: %4\n❯ Thời gian chờ: %5 giây(s)\n❯ Quyền hạn: %6\n\n» Module code by %7 «",
-		"helpList": '[ 𝐡𝐢𝐞̣̂𝐧 𝐭𝐚̣𝐢 đ𝐚𝐧𝐠 𝐜𝐨́ %1 𝐥𝐞̣̂𝐧𝐡 𝐜𝐨́ 𝐭𝐡𝐞̂̉ 𝐬𝐮̛̉ 𝐝𝐮̣𝐧𝐠 𝐭𝐫𝐞̂𝐧 𝐛𝐨𝐭 𝐧𝐚̀𝐲, 𝘀𝘂̛̉ 𝗱𝘂̣𝗻𝗴: "%2help nameCommand" đ𝐞̂̉ 𝐱𝐞𝐦 𝐜𝐡𝐢 𝐭𝐢𝐞̂́𝐭 𝐜𝐚́𝐜𝐡 𝐬𝐮̛̉ 𝐝𝐮̣𝐧𝐠!\n𝘁𝗶𝗻 𝗻𝗵𝗮̆́𝗻 𝘀𝗲̃ 𝘁𝘂̛̣ 𝗴𝗼̛̃ 𝘀𝗮𝘂 𝟯𝟬𝘀🥀 ]"',
+		"moduleInfo": "「 %1 」\n%2\n\n❯ Cách sử dụng: %3\n❯ Thuộc nhóm: %4\n❯ Thời gian chờ: %5 giây(s)\n❯ Quyền hạn: %6\n\n» Module code by Lê Bảo Huy «",
+		"helpList": '[ 𝐡𝐢𝐞̣̂𝐧 đ𝐚𝐧𝐠 𝐜𝐨́ %1 𝐥𝐞̣̂𝐧𝐡 𝐜𝐨́ 𝐭𝐡𝐞̂̉ 𝐬𝐮̛̉ 𝐝𝐮̣𝐧𝐠 𝐭𝐫𝐞̂𝐧 𝐛𝐨𝐭 𝐧𝐚̀𝐲, 𝘀𝘂̛̉ 𝗱𝘂̣𝗻𝗴: "%2help nameCommand" đ𝐞̂̉ 𝐱𝐞𝐦 𝐜𝐡𝐢 𝐭𝐢𝐞̂́𝐭 𝐜𝐚́𝐜𝐡 𝐬𝐮̛̉ 𝐝𝐮̣𝐧𝐠!\n𝘁𝗶𝗻 𝗻𝗵𝗮̆́𝗻 𝘀𝗲̃ 𝘁𝘂̛̣ 𝗴𝗼̛̃ 𝘀𝗮𝘂 𝟯𝟬𝘀🥀 ]"',
 		"user": "Người dùng",
         "adminGroup": "Quản trị viên nhóm",
         "adminBot": "Quản trị viên bot"
@@ -58,7 +58,7 @@ module.exports.run = function({ api, event, args, getText }) {
 			if (!group.some(item => item.group.toLowerCase() == commandConfig.config.commandCategory.toLowerCase())) group.push({ group: commandConfig.config.commandCategory.toLowerCase(), cmds: [commandConfig.config.name] });
 			else group.find(item => item.group.toLowerCase() == commandConfig.config.commandCategory.toLowerCase()).cmds.push(commandConfig.config.name);
 		}
-		group.forEach(commandGroup => msg += `「 ${commandGroup.group.charAt(0).toUpperCase() + commandGroup.group.slice(1)} 」\n${commandGroup.cmds.join(', ')}\n\n`);
+		group.forEach(commandGroup => msg += `🥀 ${commandGroup.group.charAt(0).toUpperCase() + commandGroup.group.slice(1)} 🥀\n${commandGroup.cmds.join(', ')}\n\n`);
 		return api.sendMessage(msg + getText("helpList", commands.size, prefix), threadID, async (error, info) =>{
 			if (autoUnsend) {
 				await new Promise(resolve => setTimeout(resolve, delayUnsend * 1000));
