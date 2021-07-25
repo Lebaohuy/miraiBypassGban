@@ -14,7 +14,7 @@ module.exports.run = async function({ api, event, Users }) {
 	const { threadID } = event;
 	if (event.logMessageData.addedParticipants.some(i => i.userFbId == api.getCurrentUserID())) {
 		api.changeNickname(`[ ${global.config.PREFIX} ] • ${(!global.config.BOTNAME) ? "Made by CatalizCS and SpermLord" : global.config.BOTNAME}`, threadID, api.getCurrentUserID());
-		return api.sendMessage(`Connected successfully! This bot was made by CatalizCS and SpermLord\nThank you for using our products, have fun UwU <3`, threadID);
+		return api.sendMessage(`𝙆𝙚̂́𝙩 𝙣𝙤̂́𝙞 𝙩𝙝𝙖̀𝙣𝙝 𝙘𝙤̂𝙣𝙜!!!\n=================\ 𝘽𝙤𝙩 đ𝙪̛𝙤̛̣𝙘 𝙫𝙖̣̂𝙣 𝙝𝙖̀𝙣𝙝 𝙗𝙤̛̉𝙞 𝙇𝙚̂ 𝘽𝙖̉𝙤 𝙃𝙪𝙮\n================\n𝘀𝘂̛̉ 𝗱𝘂̣𝗻𝗴: /help Đ𝐞̂̉ 𝐱𝐞𝐦 𝐭𝐨𝐚̀𝐧 𝐛𝐨̣̂ 𝐥𝐞̣̂𝐧𝐡 𝐡𝐢𝐞̣̂𝐧 𝐜𝐨́ 𝐜𝐮̉𝐚 𝐛𝐨𝐭 ❤`, threadID);
 	}
 	else {
 		try {
