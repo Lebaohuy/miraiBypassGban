@@ -9,14 +9,14 @@ module.exports.config = {
 	cooldowns: 5,
 	envConfig: {
 		autoUnsend: true,
-		delayUnsend: 10
+		delayUnsend: 30
 	}
 };
 
 module.exports.languages = {
 	"vi": {
 		"moduleInfo": "「 %1 」\n%2\n\n❯ Cách sử dụng: %3\n❯ Thuộc nhóm: %4\n❯ Thời gian chờ: %5 giây(s)\n❯ Quyền hạn: %6\n\n» Module code by %7 «",
-		"helpList": '[ Hiện tại đang có %1 lệnh có thể sử dụng trên bot này, Sử dụng: "%2help nameCommand" để xem chi tiết cách sử dụng! ]"',
+		"helpList": '[ 𝐡𝐢𝐞̣̂𝐧 𝐭𝐚̣𝐢 đ𝐚𝐧𝐠 𝐜𝐨́ %1 𝐥𝐞̣̂𝐧𝐡 𝐜𝐨́ 𝐭𝐡𝐞̂̉ 𝐬𝐮̛̉ 𝐝𝐮̣𝐧𝐠 𝐭𝐫𝐞̂𝐧 𝐛𝐨𝐭 𝐧𝐚̀𝐲, 𝘀𝘂̛̉ 𝗱𝘂̣𝗻𝗴: "%2help nameCommand" đ𝐞̂̉ 𝐱𝐞𝐦 𝐜𝐡𝐢 𝐭𝐢𝐞̂́𝐭 𝐜𝐚́𝐜𝐡 𝐬𝐮̛̉ 𝐝𝐮̣𝐧𝐠!\n𝘁𝗶𝗻 𝗻𝗵𝗮̆́𝗻 𝘀𝗲̃ 𝘁𝘂̛̣ 𝗴𝗼̛̃ 𝘀𝗮𝘂 𝟯𝟬𝘀🥀 ]"',
 		"user": "Người dùng",
         "adminGroup": "Quản trị viên nhóm",
         "adminBot": "Quản trị viên bot"
