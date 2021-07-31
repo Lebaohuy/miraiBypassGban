@@ -1,11 +1,11 @@
 module.exports.config = {
-	name: "autotag",
+	name: "taglientuc",
 	version: "1.0.0",
 	hasPermssion: 1,
 	credits: "VanHung & Dựa trên demo của NTKhang",
 	description: "Tag liên tục người bạn tag trong 5 lần\nCó thể gọi là gọi hồn người đó",
 	commandCategory: "group",
-	usages: "autotag @mention",
+	usages: "taglientuc @mention",
 	cooldowns: 5,
 	dependencies: ["fs-extra","axios"]
 }
