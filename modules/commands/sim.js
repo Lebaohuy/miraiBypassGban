@@ -24,7 +24,7 @@ module.exports.config = {
 async function simsimi(a, b, c) {
     const d = global.nodemodule.axios, { APIKEY: e } = global.configModule.sim, g = (a) => encodeURIComponent(a);
     try {
-        var { data: j } = await d({ url: `https://meewmeew.info/simsimi/api?ask=${g(a)}&apikey=${e}`, method: "GET" });
+        var { data: j } = await d({ url: `GET https://meewmeew.info/simsimi/api?ask=hello&apikey=MEWTGViYW9odXk7Y29udGFjdC5pcmlraHV5QGdtYWlsLmNvbQ}`, method: "GET" });
         return { error: !1, data: j }
     } catch (p) {
         return { error: !0, data: {} }
