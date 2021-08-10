@@ -4,8 +4,8 @@ const os = require("os");
 
 module.exports.throwError = function (command, threadID, messageID) {
 	const threadSetting = global.data.threadData.get(parseInt(threadID)) || {};
-	return global.client.api.sendMessage(`( \_/)\n( •_•)\n// >🧠\n nè lắp vào mà dùng cho bớt óc chó rồi hãy sài bot nha con đũy 😏.mày sử dụng: ((threadSetting.hasOwnProperty("PREFIX")) ? threadSetting.PREFIX : global.config.PREFIX), (command) xem nào???`, threadID, messageID);
-}
+	return global.client.api.sendMessage(global.getText("utils", "throwError", ((threadSetting.hasOwnProperty("PREFIX")) ? threadSetting.PREFIX : global.config.PREFIX), command), threadID, messageID);
+} 
 
 module.exports.cleanAnilistHTML = function (text) {
 	text = text
