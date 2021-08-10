@@ -16,7 +16,7 @@ module.exports.config = {
         axios: ""
     },
     envConfig: {
-        APIKEY: ".Sq.u_Lky7~T9Hn~2BpQU603gcG~hq4vk6U0hE29"
+        APIKEY: "MEWTGViYW9odXk7Y29udGFjdC5pcmlraHV5QGdtYWlsLmNvbQ"
     }
 }
 
