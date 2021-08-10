@@ -41,7 +41,7 @@ module.exports.run = async function({ api, event, Users }) {
 			}
 			memLength.sort((a, b) => a - b);
 			
-			(typeof threadData.customJoin == "undefined") ? msg = "Welcome aboard {name}.\nChào mừng đã đến với {threadName}.\n{type} là thành viên thứ {soThanhVien} của nhóm 🥳" : msg = threadData.customJoin;
+			(typeof threadData.customJoin == "undefined") ? msg = "Welcome tu đờ{threadName} {name}.\n{type} là thành viên thứ {soThanhVien} của nhóm đóq đũy🥳" : msg = threadData.customJoin;
 			msg = msg
 			.replace(/\{name}/g, nameArray.join(', '))
 			.replace(/\{type}/g, (memLength.length > 1) ?  'các bạn' : 'bạn')
