@@ -14,7 +14,7 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 	if (event.body.indexOf("bot ngu")==0 || (event.body.indexOf("Bot ngu")==0)) {
 		var msg = {
 				body: "Ngu cái địt mẹ mày chứ ngu không biết dùng bot chửi cc",
-				attachment: fs.createReadStream(__dirname + `/noprefix/Hay.gif`)
+				
 			}
 			api.sendMessage(msg, threadID, messageID);
 		}
