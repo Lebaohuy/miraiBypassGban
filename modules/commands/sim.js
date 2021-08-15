@@ -1,8 +1,3 @@
-/**
- * @author ProCoderMew
- * @warn Do not edit code or edit credits
- * @apikey Reg key tại: https://meewmeew.info/site
- */
 module.exports.config = {
     name: "sim",
     version: "4.3.6",
