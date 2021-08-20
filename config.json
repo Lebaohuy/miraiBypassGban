@@ -13,7 +13,7 @@
     "BOTNAME": "BaoHuyBot",
     "PREFIX": ".",
     "ADMINBOT": [
-        "100041358902536 "
+        "100041358902536"
     ],
     "DATABASE": {
         "sqlite": {
